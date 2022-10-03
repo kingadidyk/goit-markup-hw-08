@@ -1,0 +1,77 @@
+.sm-footer {
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-white;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-right: 10px;
+  }
+}
+
+.sm-footer__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: $color-text-white;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+
+  &:hover,
+  &:focus {
+    background-color: $color-bg-blue;
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: $main-animation;
+  }
+
+  &__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    fill: $color-text-white;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms $main-animation,
+      color 250ms $main-animation;
+  }
+}
+
+.sm-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $color-border-dirtyPigeon;
+  margin-bottom: 30px;
+  gap: 10px;
+
+  &__link {
+    display: inline-flex;
+    fill: $color-border-dirtyPigeon;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $color-bg-white;
+    transition-property: color, background-color, box-shadow;
+
+    &:hover,
+    &:focus {
+      background-color: $color-bg-blue;
+      fill: $color-text-white;
+      transition-duration: 250ms;
+      transition-timing-function: $main-animation;
+    }
+  }
+}

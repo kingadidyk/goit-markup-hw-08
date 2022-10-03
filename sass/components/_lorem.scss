@@ -1,0 +1,38 @@
+.section-lorem {
+  padding: 94px 0 0 0;
+}
+
+.lorem-svg {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding-bottom: 30px;
+
+  &__icon {
+    background-color: $color-bg-almostWhite;
+    border-radius: 4px;
+  }
+}
+
+.box-lorem {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+
+  &__item {
+    color: $color-text-black;
+    font-weight: $font-weight-bold;
+    font-size: 14px;
+    line-height: 1.5;
+    list-style: none;
+  }
+
+  &__text {
+    color: $color-text-gray;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+  }
+}

@@ -1,0 +1,130 @@
+.menu-toggle {
+  fill: $color-text-black;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    fill: $color-text-blue;
+  }
+}
+
+.mobile-menu-container {
+  background-color: $color-bg-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  transition: transform 250ms ease-in-out;
+  z-index: 999;
+  transform: translateX(100%);
+}
+
+.mobile-menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu__items {
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+}
+
+.mobile-menu__link {
+  display: block;
+  color: $color-text-black;
+  font-weight: $font-weight-medium;
+  font-size: 40px;
+  line-height: 0.98;
+  letter-spacing: 0.02;
+  text-decoration: none;
+
+  &--current {
+    display: block;
+    color: $color-text-blue;
+    font-weight: $font-weight-medium;
+    font-size: 40px;
+    text-decoration: none;
+    line-height: 0.98;
+    letter-spacing: 0.02;
+  }
+
+  &:hover {
+    color: $color-text-blue;
+  }
+}
+
+.mobile-contact {
+  display: flex;
+  flex-direction: column;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    color: $color-text-gray;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: $font-weight-medium;
+
+    &--accent {
+      color: $color-text-blue;
+      text-decoration: none;
+      font-size: 34px;
+      font-weight: $font-weight-medium;
+      line-height: 1.17;
+    }
+  }
+}
+
+.mobile-sm {
+  display: flex;
+  position: relative;
+  padding-top: 64px;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:not(:last-child)::before {
+      display: block;
+      position: absolute;
+      content: "";
+      background-color: $color-bg-mobile;
+      top: 0;
+      right: -10px;
+      height: 100%;
+      width: 1px;
+    }
+  }
+
+  &__link {
+    color: $color-text-blue;
+    font-size: 18px;
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+  }
+}

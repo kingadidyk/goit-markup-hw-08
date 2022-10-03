@@ -1,0 +1,68 @@
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-white;
+
+  &__btn {
+    margin: auto;
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border-style: hidden;
+    border-radius: 4px;
+    color: $color-text-white;
+    background-color: $color-bg-blue;
+    box-shadow: $box-shadow-form;
+    cursor: pointer;
+    transition: background-color 250ms $main-animation;
+    white-space: nowrap;
+    padding: 10px 28px 10px 42px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__settings {
+    display: inline-flex;
+    gap: 20px;
+  }
+
+  &__mail {
+    width: 358px;
+    height: 50px;
+    padding-top: 20px;
+    padding: 0 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-text-lightGray;
+    background-color: transparent;
+    border: 1px solid #ffffff4d;
+    filter: drop-shadow($box-shadow-form);
+    border-radius: 4px;
+    transition: border 250ms $main-animation;
+
+    &:hover {
+      border-color: $color-text-blue;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: $color-text-white;
+    transform: translateY(43%);
+  }
+}

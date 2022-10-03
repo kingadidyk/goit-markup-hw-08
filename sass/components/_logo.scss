@@ -1,0 +1,16 @@
+.logo {
+  font-family: $second-font;
+  color: $color-text-blue;
+  font-weight: $font-weight-bold;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 1.193;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  &__logo-box {
+    flex-direction: column;
+    text-decoration: none;
+  }
+}

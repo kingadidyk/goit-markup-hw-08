@@ -1,0 +1,41 @@
+.navigation {
+  color: $color-text-black;
+  font-weight: $font-weight-medium;
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin-left: 93px;
+
+  &__link {
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+    color: $color-text-black;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: $main-animation;
+
+    &:hover,
+    &:focus {
+      color: $color-text-blue;
+    }
+  }
+}
+
+.navigation__link--current {
+  color: $color-text-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    border: 2px;
+    top: 45px;
+    background-color: $color-bg-blue;
+    width: 100%;
+  }
+}
