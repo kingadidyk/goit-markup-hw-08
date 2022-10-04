@@ -1,3 +1,38 @@
+/*mobile settings*/
+.footer {
+  color: $color-text-white;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    align-items: baseline;
+    text-align: center;
+  }
+
+  &__address {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 115px;
+  }
+
+  &__items:not(:last-child) {
+    font-style: normal;
+    margin-bottom: 9px;
+  }
+}
+
+/*
 .footer {
   color: $color-text-white;
   font-size: 14px;
@@ -29,3 +64,4 @@
     margin-bottom: 9px;
   }
 }
+*/

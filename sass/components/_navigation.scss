@@ -1,10 +1,12 @@
+/* mobile settings */
+
 .navigation {
+  display: none;
   color: $color-text-black;
   font-weight: $font-weight-medium;
   font-size: 14px;
   line-height: 1.5;
   list-style: none;
-  display: flex;
   flex-direction: row;
   gap: 46px;
   margin-left: 93px;

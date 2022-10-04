@@ -1,3 +1,60 @@
+/* mobile settings*/
+
+.overlay {
+  max-width: 480px;
+  height: 400px;
+  background-image: linear-gradient($bg-gradient),
+    url("../images/imgbackground-mobile.jpg");
+  background-color: $color-bg-darkGray;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 118px;
+  }
+
+  &__title {
+    color: $color-text-white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    width: 365px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    color: $color-text-white;
+    background-color: $color-bg-blue;
+    align-items: center;
+    text-align: center;
+    font-family: $main-font, sans-serif;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border-style: hidden;
+    border-radius: 4px;
+    box-shadow: $box-shadow-overlay;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+}
+
+/*
 .overlay {
   max-width: 1600px;
   background-image: linear-gradient($bg-gradient),
@@ -58,3 +115,5 @@
     cursor: pointer;
   }
 }
+
+*/

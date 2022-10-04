@@ -1,3 +1,21 @@
+/* mobile settings */
+.section-lorem {
+  padding-top: 60px;
+}
+
+.lorem-svg {
+  justify-content: space-around;
+  gap: 30px;
+  padding-bottom: 30px;
+
+  &__icon {
+    background-color: $color-bg-almostWhite;
+    border-radius: 4px;
+    width: 450px;
+  }
+}
+
+/*
 .section-lorem {
   padding: 94px 0 0 0;
 }
@@ -36,3 +54,4 @@
     line-height: 1.71;
   }
 }
+*/
