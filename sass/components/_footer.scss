@@ -8,22 +8,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  &__logo-box {
+    display: block;
+    margin-left: 100px;
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 15px;
     padding-right: 15px;
-    margin: 0px auto;
     align-items: baseline;
     text-align: center;
+    justify-content: center;
   }
 
   &__address {
     display: block;
     text-align: center;
     padding-top: 20px;
-    margin-left: 115px;
   }
 
   &__items:not(:last-child) {

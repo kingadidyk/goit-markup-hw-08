@@ -10,11 +10,13 @@
   margin-bottom: 0;
   padding-bottom: 20px;
   margin-top: 60px;
+  text-align: start;
+  margin-left: 168px;
 
   &__list {
     display: flex;
     padding: 0;
-    margin-left: 137px;
+    margin-left: 122px;
   }
 
   &__item {
@@ -30,7 +32,6 @@
   border-radius: 50%;
   background-color: #ffffff1a;
 
-  &:hover,
   &:focus {
     background-color: $color-bg-blue;
     border-radius: 50%;
@@ -123,7 +124,6 @@
     background-color: $color-bg-white;
     transition-property: color, background-color, box-shadow;
 
-    &:hover,
     &:focus {
       background-color: $color-bg-blue;
       fill: $color-text-white;
