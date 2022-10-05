@@ -794,7 +794,7 @@ img {
 .box-lorem__icon {
   background-color: #f5f4fa;
   border-radius: 4px;
-  width: 450px;
+  width: 435px;
 }
 .box-lorem__item {
   color: #212121;
@@ -976,7 +976,7 @@ img {
   gap: 30px;
 }
 .team__items {
-  width: 450px;
+  width: 435px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1215686275), 0px 1px 1px rgba(0, 0, 0, 0.1411764706), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1215686275), 0px 1px 1px rgba(0, 0, 0, 0.1411764706), 0px 2px 1px rgba(0, 0, 0, 0.2);
