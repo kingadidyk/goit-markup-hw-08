@@ -1,4 +1,15 @@
 .menu-toggle {
+  border: none;
+  fill: $color-text-black;
+  background-color: transparent;
+
+  &:focus {
+    fill: $color-text-blue;
+  }
+}
+
+/*
+.menu-toggle {
   fill: $color-text-black;
   background-color: transparent;
   cursor: pointer;
@@ -8,8 +19,6 @@
     fill: $color-text-blue;
   }
 }
-
-/*
 
 .mobile-menu-container {
   background-color: $color-bg-white;
