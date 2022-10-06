@@ -4,58 +4,19 @@
   border: none;
   fill: $color-text-black;
   background-color: transparent;
-
-  &:focus {
-    fill: $color-text-blue;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .mobile-menu-container {
-    background-color: $color-bg-white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
-    top: 0;
-    left: 0;
-    transition: transform 250ms ease-in-out;
-    z-index: 999;
-    transform: translateX(100%);
-  }
-}
-
-/*
-.menu-toggle {
-  fill: $color-text-black;
-  background-color: transparent;
   cursor: pointer;
-  border: none;
+  position: absolute;
+  top: 22px;
+  right: 23px;
 
+  &:focus,
   &:hover {
     fill: $color-text-blue;
   }
 }
 
-
-
-.mobile-menu-container.is-open {
+.is-open {
   transform: translateX(0);
-}
-
-.mobile-menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
 }
 
 .mobile-menu {
@@ -64,36 +25,48 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
+  margin-bottom: 302px;
 
-.mobile-menu__items {
-  &:not(:last-child) {
-    margin-bottom: 36px;
+  &__items {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
   }
-}
 
-.mobile-menu__link {
-  display: block;
-  color: $color-text-black;
-  font-weight: $font-weight-medium;
-  font-size: 40px;
-  line-height: 0.98;
-  letter-spacing: 0.02;
-  text-decoration: none;
-
-  &--current {
+  &__link {
     display: block;
-    color: $color-text-blue;
+    color: $color-text-black;
     font-weight: $font-weight-medium;
     font-size: 40px;
-    text-decoration: none;
     line-height: 0.98;
     letter-spacing: 0.02;
-  }
+    text-decoration: none;
 
-  &:hover {
-    color: $color-text-blue;
+    &--current {
+      display: block;
+      color: $color-text-blue;
+      font-weight: $font-weight-medium;
+      font-size: 40px;
+      text-decoration: none;
+      line-height: 0.98;
+      letter-spacing: 0.02;
+    }
+
+    &:hover {
+      color: $color-text-blue;
+    }
   }
+}
+
+.mobile-menu-container {
+  margin-left: 40px;
+  display: none;
+}
+
+.mobile-menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
 .mobile-contact {
@@ -122,8 +95,10 @@
 
 .mobile-sm {
   display: flex;
+  justify-content: start;
   position: relative;
   padding-top: 64px;
+  margin-bottom: 48px;
 
   &__item {
     position: relative;
@@ -151,5 +126,3 @@
     text-decoration: none;
   }
 }
-
-*/
