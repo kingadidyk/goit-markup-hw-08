@@ -11,6 +11,10 @@
   &__logo-box {
     display: block;
     margin-left: 100px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
   }
 
   &__box {
@@ -21,6 +25,22 @@
     align-items: baseline;
     text-align: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      & {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
   }
 
   &__address {

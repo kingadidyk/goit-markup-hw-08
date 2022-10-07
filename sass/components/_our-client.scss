@@ -20,6 +20,18 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        flex-basis: calc((100% - (30px * 2)) / 3);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        flex-basis: calc((100% - (30px * 5)) / 6);
+      }
+    }
   }
 
   &__items {
@@ -27,6 +39,12 @@
     border: 1px solid $color-border-dirtyPigeon;
     border-radius: 4px;
     transition-property: color, background-color, box-shadow;
+
+    @media screen and (min-width: 768px) {
+      & {
+        flex-basis: auto;
+      }
+    }
 
     &:hover,
     &:focus,
