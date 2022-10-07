@@ -1,13 +1,28 @@
 /* mobile settings*/
 
 .overlay {
-  max-width: 480px;
+  min-width: 480px;
+  max-width: 1600px;
   height: 400px;
   background-image: linear-gradient($bg-gradient),
     url("../images/imgbackground-mobile.jpg");
   background-color: $color-bg-darkGray;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: linear-gradient($bg-gradient),
+        url("../images/imgbackground-tablet.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      background-image: linear-gradient($bg-gradient),
+        url("../images/imgbackground.jpg");
+    }
+  }
 
   &__box {
     display: flex;

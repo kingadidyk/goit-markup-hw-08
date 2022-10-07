@@ -13,6 +13,12 @@
   &:hover {
     fill: $color-text-blue;
   }
+
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
 }
 
 .is-open {
