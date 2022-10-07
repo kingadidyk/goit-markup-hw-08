@@ -4,7 +4,8 @@
 }
 
 .box-lorem {
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 30px;
 
@@ -20,6 +21,20 @@
     font-size: 14px;
     line-height: 1.5;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      & {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        flex-basis: calc((100% - 30px * 3) / 4);
+      }
+    }
   }
 
   &__title {
