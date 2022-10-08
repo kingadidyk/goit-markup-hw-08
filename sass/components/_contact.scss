@@ -5,6 +5,35 @@
   align-items: center;
   gap: 30px;
   margin-left: 345px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      margin-left: 101px;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      height: 16px;
+      margin-left: 345px;
+    }
+  }
+}
+
+.contact__number {
+  @media screen and (min-width: 1200px) {
+    & {
+      align-content: flex-end;
+    }
+  }
 }
 
 .contact__link {
@@ -15,6 +44,12 @@
   font-size: 14px;
   letter-spacing: 0.02em;
   transition-property: color, background-color, box-shadow;
+
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: 12px;
+    }
+  }
 
   &:hover,
   &:focus {
@@ -32,8 +67,6 @@
   }
 }
 
-/* svg */
-
 .contact__icon {
   fill: $color-text-gray;
   margin-right: 10px;
@@ -49,6 +82,12 @@
   font-size: 14px;
   letter-spacing: 0.02em;
   transition-property: color, background-color, box-shadow;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      justify-content: flex-start;
+    }
+  }
 
   &:hover,
   &:focus {

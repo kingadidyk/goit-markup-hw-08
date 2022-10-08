@@ -2,8 +2,20 @@
 
 .header {
   border-bottom: 1px solid $color-border-beige;
-  margin-top: 16px;
+  padding-top: 16px;
   padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-bottom: 24px;
+    }
+  }
 
   &__box {
     display: flex;
@@ -11,6 +23,20 @@
     align-items: center;
     padding: 0;
     padding-right: 23px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        padding-left: 15px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        padding-left: 0;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
   }
 }
 

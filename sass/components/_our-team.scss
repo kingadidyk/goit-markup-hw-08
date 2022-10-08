@@ -18,7 +18,6 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -28,20 +27,32 @@
     background-color: $color-bg-white;
     box-shadow: $box-shadow-modal;
     border-radius: 0px 0px 4px 4px;
-
     @media screen and (min-width: 768px) {
       & {
         width: 354px;
-        margin-left: 0;
         flex-basis: calc((100% - 30px) / 2);
+        margin-left: 0;
       }
     }
 
     @media screen and (min-width: 1200px) {
       & {
-        width: auto;
         margin-left: 0;
         flex-basis: calc((100% - 30px * 3) / 4);
+      }
+    }
+  }
+
+  &__img {
+    @media screen and (min-width: 768px) {
+      & {
+        width: 354px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        width: 270px;
       }
     }
   }

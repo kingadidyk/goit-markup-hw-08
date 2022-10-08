@@ -4,6 +4,12 @@
   padding: 94px 0;
   display: none;
 
+  @media screen and (min-width: 1200px) {
+    & {
+      display: flex;
+    }
+  }
+
   &__title {
     color: $color-text-black;
     font-weight: $font-weight-bold;

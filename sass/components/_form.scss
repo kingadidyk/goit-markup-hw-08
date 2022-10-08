@@ -14,6 +14,12 @@
   &__sign-up {
     text-align: start;
     margin-left: 122px;
+
+    @media screen and (min-width: 1200px) {
+      & {
+        margin-left: 0;
+      }
+    }
   }
 
   &__btn {
@@ -60,6 +66,12 @@
     filter: drop-shadow($box-shadow-form);
     border-radius: 4px;
     transition: border 250ms $main-animation;
+
+    @media screen and (min-width: 1200px) {
+      & {
+        width: 358px;
+      }
+    }
 
     &:hover {
       border-color: $color-text-blue;
