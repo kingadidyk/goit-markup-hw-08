@@ -16,6 +16,7 @@
       background-image: linear-gradient($bg-gradient),
         url("../images/imgbackground-tablet.jpg"),
         url("../images/imgbackground-tablet@2x.jpg");
+      background-color: $color-bg-darkGray;
     }
   }
 
@@ -24,7 +25,9 @@
       background-image: linear-gradient($bg-gradient),
         url("../images/imgbackground.jpg"),
         url("../images/imgbackground@2x.jpg");
+      background-color: $color-bg-darkGray;
       height: 600px;
+      background-position: center;
     }
   }
 
