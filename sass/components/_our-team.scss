@@ -4,6 +4,13 @@
   width: 100%;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    & {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__title {
     color: $color-text-black;
     font-weight: $font-weight-bold;
@@ -52,7 +59,7 @@
 
     @media screen and (min-width: 1200px) {
       & {
-        width: 270px;
+        width: 100%;
       }
     }
   }
