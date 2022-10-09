@@ -10,12 +10,21 @@
   background-color: $color-bg-darkGray;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: scale-down;
 
   @media screen and (min-width: 768px) {
     & {
       background-image: linear-gradient($bg-gradient),
-        url("../images/imgbackground-tablet.jpg"),
-        url("../images/imgbackground-tablet@2x.jpg");
+        url("../images/imgbackground-tablet.jpg");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient($bg-gradient),
+          url("../images/imgbackground-tablet@2x.jpg");
+      }
     }
   }
 
@@ -26,6 +35,15 @@
       background-color: $color-bg-darkGray;
       height: 600px;
       background-position: center;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient($bg-gradient),
+          url("../images/imgbackground@2x.jpg");
+      }
     }
   }
 
@@ -85,5 +103,14 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient($bg-gradient),
+      url("../images/imgbackground-mobile@2x.jpg");
   }
 }

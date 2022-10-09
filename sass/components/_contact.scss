@@ -46,6 +46,7 @@
   font-size: 14px;
   letter-spacing: 0.02em;
   transition-property: color, background-color, box-shadow;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     & {

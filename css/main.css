@@ -828,6 +828,9 @@ img {
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
   transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .contact__link {
@@ -955,11 +958,19 @@ img {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3019607843)), to(rgba(0, 0, 0, 0.3019607843))), url("../images/imgbackground-tablet.jpg"), url("../images/imgbackground-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url("../images/imgbackground-tablet.jpg"), url("../images/imgbackground-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3019607843)), to(rgba(0, 0, 0, 0.3019607843))), url("../images/imgbackground-tablet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url("../images/imgbackground-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3019607843)), to(rgba(0, 0, 0, 0.3019607843))), url("../images/imgbackground-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url("../images/imgbackground-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -969,6 +980,12 @@ img {
     background-color: #2f303a;
     height: 600px;
     background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3019607843)), to(rgba(0, 0, 0, 0.3019607843))), url("../images/imgbackground@2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url("../images/imgbackground@2x.jpg");
   }
 }
 .overlay__box {
@@ -1036,6 +1053,12 @@ img {
   cursor: pointer;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3019607843)), to(rgba(0, 0, 0, 0.3019607843))), url("../images/imgbackground-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url("../images/imgbackground-mobile@2x.jpg");
+  }
+}
 /* mobile settings */
 .section-lorem {
   padding-top: 60px;
