@@ -3,6 +3,8 @@
 .form-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: $font-weight-bold;
   font-size: 14px;
   line-height: 1.15;
@@ -12,9 +14,7 @@
   margin-top: 60px;
 
   &__sign-up {
-    text-align: start;
-    margin-left: 122px;
-
+    align-items: center;
     @media screen and (min-width: 1200px) {
       & {
         margin-left: 0;

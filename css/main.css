@@ -212,6 +212,12 @@ img {
   font-weight: 500;
   text-decoration: none;
 }
+@media screen and (min-width: 320px) {
+  .mobile-sm {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 /* mobile settings*/
 .is-hidden {
@@ -1399,6 +1405,11 @@ img {
 }
 */
 /*mobile settings*/
+.container-sm {
+  width: 100%;
+  text-align: center;
+}
+
 .sm-footer {
   font-weight: 700;
   font-size: 14px;
@@ -1409,12 +1420,29 @@ img {
   margin-bottom: 0;
   padding-bottom: 20px;
   margin-top: 60px;
-  text-align: start;
-  margin-left: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .sm-footer {
-    margin-top: -44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1427,7 +1455,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  margin-left: 122px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .sm-footer__list {
@@ -1743,8 +1778,20 @@ img {
   padding-bottom: 60px;
 }
 .footer__logo-box {
-  display: block;
-  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer__logo-box {
@@ -1787,12 +1834,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
@@ -1806,7 +1847,10 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .footer__address {
@@ -1814,44 +1858,16 @@ img {
   text-align: center;
   padding-top: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
 .footer__items:not(:last-child) {
   font-style: normal;
   margin-bottom: 9px;
 }
 
-/*
-.footer {
-  color: $color-text-white;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  &__box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0px auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  &__address {
-    display: block;
-    padding-top: 20px;
-  }
-
-  &__items:not(:last-child) {
-    font-style: normal;
-    margin-bottom: 9px;
-  }
-}
-*/
 /* mobile settings */
 .form-footer {
   display: -webkit-box;
@@ -1861,6 +1877,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -1870,8 +1892,9 @@ img {
   margin-top: 60px;
 }
 .form-footer__sign-up {
-  text-align: start;
-  margin-left: 122px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .form-footer__sign-up {
