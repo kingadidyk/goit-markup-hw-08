@@ -1,8 +1,20 @@
 /*mobile settings*/
 .container-sm {
-  width: 100%;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 45%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
+
 .sm-footer {
   font-weight: $font-weight-bold;
   font-size: 14px;
@@ -19,13 +31,10 @@
   width: 100%;
 
   @media screen and (min-width: 768px) {
-    & {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-      width: auto;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -50,7 +59,8 @@
   }
 
   &__item {
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 
