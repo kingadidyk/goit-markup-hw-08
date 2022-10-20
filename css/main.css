@@ -212,7 +212,7 @@ img {
   font-weight: 500;
   text-decoration: none;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 480px) {
   .mobile-sm {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -957,7 +957,7 @@ img {
 /* mobile settings*/
 .overlay {
   min-width: 480px;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   height: 400px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3019607843)), to(rgba(0, 0, 0, 0.3019607843))), url("../images/imgbackground-mobile.jpg"), url("../images/imgbackground-mobile@2x.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3019607843), rgba(0, 0, 0, 0.3019607843)), url("../images/imgbackground-mobile.jpg"), url("../images/imgbackground-mobile@2x.jpg");
@@ -1814,7 +1814,7 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
+  .footer__logo-box {
     padding-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1905,6 +1905,11 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    width: auto;
+  }
 }
 .form-footer__sign-up {
   -webkit-box-align: center;
