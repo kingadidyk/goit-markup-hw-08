@@ -254,12 +254,18 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1215686275), 0px 1px 1px rgba(0, 0, 0, 0.1411764706), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .backdrop__modal {
+    top: 50%;
+    left: 50%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
     width: 528px;
     height: 581px;
-    margin-top: 10.5%;
-    margin-left: 18.5%;
+    top: 50%;
+    left: 50%;
   }
 }
 .backdrop__button-close {
